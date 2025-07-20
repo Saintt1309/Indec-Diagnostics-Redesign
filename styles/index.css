@@ -1,0 +1,220 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.hero-section {
+    background-color: ffffff;
+    margin-bottom: 154px;
+}
+
+.hero-section img {
+    width: 100%;
+}
+
+.hero-section p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    width: 850px;
+}
+
+.hero-section h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ef4444;
+    padding-top: 40px;
+}
+
+.hero-section p, .hero-section h1 {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.product-tease {
+    background-color: #f0f0f0;
+    padding-bottom: 89px;
+    padding-top: 94px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.product-tease > h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ef4444;
+}
+
+.product-tease > p {
+
+    margin-top: 20px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    width: 840px;
+}
+
+.product-card-container {
+    margin-top: 105px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 100px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.product-card h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ef4444;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.product-card-button {
+    background-color: #ef4444;
+    width: 350px;
+    height: 54px;
+    margin-top: 34px;
+    margin-left: 25px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.product-card-button a {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.product-card img {
+    width: 350px;
+    height: 350px;
+    margin:25px
+}
+
+.about-section {
+    padding-top: 146px;
+    background-color: white;
+    padding-bottom: 46px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.process-1, .process-3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 60px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.process-2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.process-1 #process-img, .process-2 #process-img, .process-3 #process-img {
+    width: 564px;
+    height: 380px;
+}
+
+.process-description {
+    position: relative;
+    left: -41px;
+    background-color: #E5E7EB;
+    width: 400px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.process-description h1, .process2-description h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ef4444;
+    width: 350px;
+    margin-bottom: 20px;
+}
+.process-description p, .process2-description p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    width: 340px;
+}
+
+.process-3 > .process-description p {
+    width: 320px;
+}
+
+.process2-description {
+    position: relative;
+    left: 41px;
+    background-color: #E5E7EB;
+    width: 400px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.process2-description p {
+    position: relative;
+    left: 41px;
+    text-align: right;
+}
+
+.process2-description h1 {
+    position: relative;
+    left: 31px;
+    text-align: right;
+}
+
+
+.process-1 #process-icon, .process-3 #process-icon {
+    position: relative;
+    top: -160px;
+    left: -78px;
+}
+
+.process-2 #process-icon {
+    position: relative;
+    top: -160px;
+    left: -976px;
+    order: 3;
+}

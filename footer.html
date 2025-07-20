@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+    }
+    footer {
+        background-color: #201f1f;
+        padding-bottom: 5px;
+    }
+
+    .contact-us{
+        padding-top: 27px;
+        padding-bottom: 81px;
+    }
+
+    .contact-us h1{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .contact-us p{
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .connect-button-f {
+        margin:auto;
+        background-color: #ef4444;
+        border-radius: 7px;
+        width: 302px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        transition: 150ms ease-in-out;
+        border: 2px solid #ef4444;
+    }
+    .connect-button-f a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: 150ms ease-in-out;
+    }
+
+    .connect-button-f:hover {
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+
+    .connect-button-f:hover > a {
+        color: #ef4444;
+    }
+
+    .footer-content {
+        display: flex;
+        gap: 100px;
+    }
+
+    .footer-content h1{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+        color: #ef4444;
+    }
+
+    .contact-info{
+        margin: 0;
+    }
+
+    .contact-info p{
+        margin: 0;
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+        width: 300px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        
+    }
+
+    .phone-number, .email, .careers {
+        display: flex;
+    }
+
+    .phone-number img, .email img, .careers img {
+        margin-right: 10px;
+    }
+
+    .site-navigation ul{
+        list-style: none;
+        padding: 0;
+    }
+    .site-navigation ul li{
+        margin-bottom: 10px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .site-navigation ul li a {
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .copyright {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer-container #logo{
+        width: 183px;
+        height: 68px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+
+
+
+</style>
+
+<body>
+    <footer>
+        <div class="contact-us">
+            <h1>Connect With Our Team</h1>
+            <p>Reach out to discuss partnerships, products, or tailored support for your needs.</p>
+            <div class="connect-button-f">
+                <a href="contactus.php">Let's Connect</a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <img id="logo" src="images/Logo.png" alt="Indec Diagnostics Logo" />
+            <div class="footer-content">
+                <div class="follow-us">
+                    <h1>Follow Us</h1>
+                        <a href="https://www.instagram.com/indecdiagnostics/" target="_blank"> <img src="icons/instagram.svg" alt="Instagram Icon" /></a>
+                        <a href="https://www.facebook.com/indecdiagnostics/" target="_blank"> <img src="icons/facebook.svg" alt="Facebook Icon" /></a>
+                        <a href="https://www.linkedin.com/company/indecdiagnostics/" target="_blank"> <img src="icons/linkedin.svg" alt="Linkedin Icon" /></a>
+                </div>
+                <div class="site-navigation">
+                    <h1>Site Navigation</h1>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
+                        <li><a href="products.php">Products</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="contactus.php">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h1>Contact Us</h1>
+                    <p>Kompleks Perkantoran Taman Pulo Gebang Blok A3 No. 17-20, Jalan Raya Bekasi KM 24, Jakarta 13910, Indonesia.</p>
+                    <div class="phone-number">
+                        <img src="icons/phone.svg" alt="Phone Icon" />
+                        <p>(62-21) 460-8822</p>
+                    </div>
+                    <div class="email">
+                        <img src="icons/mail.svg" alt="Email Icon" />
+                        <p>inquiry@indecdiagnostics.com</p>
+                    </div>
+                    <div class="careers">
+                        <img src="icons/mail.svg" alt="Careers Icon" />
+                        <p>careers@indecdiagnostics.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2025 PT. Indec Diagnostics All rights reserved.</p>
+    </footer>
+</body>
+</html>
