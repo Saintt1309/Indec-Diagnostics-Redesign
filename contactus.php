@@ -92,11 +92,11 @@
             <p>Kompleks Perkantoran Taman Pulo Gebang Blok A3 No. 17-20, Jalan Raya Bekasi KM 24, Jakarta 13910, Indonesia.</p>
             <div class="map-buttons">
                 <div class="waze-button">
-                    <a href="#" target="_blank">Waze </a>
+                    <a href="https://ul.waze.com/ul?place=ChIJ_9JhJA6LaS4RS0UGAd4PpwA&ll=-6.18599040%2C106.94782130&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank">Waze </a>
                     <img src="icons/arrow-top-right.svg">
                 </div>
                 <div class="google-maps-button">
-                    <a href="#" target="_blank">Google Maps </a>
+                    <a href="https://maps.app.goo.gl/xoBzCRQBxSp8ihrd6" target="_blank">Google Maps </a>
                     <img src="icons/arrow-top-right.svg">
                 </div>
             </div>
