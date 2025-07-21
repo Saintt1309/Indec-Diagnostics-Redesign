@@ -145,12 +145,6 @@
     transition: 150ms ease-in-out;
 }
 
-.form-button button[type="submit"]:hover > #arrow-top-right {
-    content: url("/icons/arrow-top-right-red.svg");
-    transform: rotate(45deg);
-    transition: 150ms ease-in-out;
-}
-
 .form-button button[type="reset"]:hover {
     background-color: #000000;
     color: #ef4444;
@@ -263,20 +257,4 @@ iframe {
 
 .google-maps-button:hover > a {
     color: #34A843;
-}
-
-.waze-button img, .google-maps-button img{
-    transition: 150ms ease-in-out;
-}
-
-.waze-button:hover > img{
-    content: url("/icons/arrow-top-right-blue.svg");
-    transform: rotate(45deg);
-    transition: 150ms ease-in-out;
-}
-
-.google-maps-button:hover > img{
-    content: url("/icons/arrow-top-right-green.svg");
-    transform: rotate(45deg);
-    transition: 150ms ease-in-out;
 }

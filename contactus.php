@@ -1,3 +1,7 @@
+<?php
+    include 'header.html';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,6 +14,31 @@
 
         <link rel="stylesheet" href="styles/contactus.css">
     </head>
+
+    <style> <!-- no clue why I need to put it in the raw HTML file instead of the CSS file, even though it works in the live preview extension, it breaks on xampp. -->
+        .waze-button img, .google-maps-button img{
+            transition: 150ms ease-in-out;
+        }
+
+        .form-button button[type="submit"]:hover > #arrow-top-right {
+            content: url(icons/arrow-top-right-red.svg);
+            transform: rotate(45deg);
+            transition: 150ms ease-in-out;
+        }
+
+        .waze-button:hover > img{
+            content: url(icons/arrow-top-right-blue.svg);
+            transform: rotate(45deg);
+            transition: 150ms ease-in-out;
+        }
+
+        .google-maps-button:hover > img{
+            content: url(icons/arrow-top-right-green.svg);
+            transform: rotate(45deg);
+            transition: 150ms ease-in-out;
+        } 
+    </style>
+    
     <body>
         <img src="images/contact-hero-image.png" id="contact-hero-image">
         <section class="contact-section">
@@ -51,7 +80,7 @@
                         <textarea name="message" placeholder="What Can We Help You With?"></textarea>
                     </div>
                     <div class="form-button">
-                        <button type="submit">Let's Talk <img id="arrow-top-right" src="icons/arrow-top-right.svg" alt="Arrow Right"></button>
+                        <button type="submit">Let's Talk <img id="arrow-top-right" src="icons/arrow-top-right.svg"></button>
                         <button type="reset">Reset</button>
                     </div>
                 </form>
@@ -64,11 +93,11 @@
             <div class="map-buttons">
                 <div class="waze-button">
                     <a href="#" target="_blank">Waze </a>
-                    <img src="icons/arrow-top-right.svg" alt="Arrow Right">
+                    <img src="icons/arrow-top-right.svg">
                 </div>
                 <div class="google-maps-button">
                     <a href="#" target="_blank">Google Maps </a>
-                    <img src="icons/arrow-top-right.svg" alt="Arrow Right">
+                    <img src="icons/arrow-top-right.svg">
                 </div>
             </div>
             <div class="map-container">
@@ -76,4 +105,7 @@
             </div>
         </section>
     </body>
+    <?php
+        include 'footer.html';
+    ?>
 </html> 
