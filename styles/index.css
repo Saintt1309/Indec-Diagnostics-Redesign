@@ -42,6 +42,8 @@ body {
     text-align: center;
 }
 
+/* Product Tease Section */
+
 .product-tease {
     background-color: #E5E7EB;
     padding-bottom: 89px;
@@ -68,9 +70,9 @@ body {
 .product-card-container {
     margin-top: 105px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
-    gap: 100px;
+    gap: auto;
 }
 
 .product-card {
@@ -120,31 +122,36 @@ body {
     margin:25px
 }
 
+@media (max-width: 1400px) {
+    .product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    }
+}
+
+
 .about-section {
     padding-top: 146px;
     background-color: white;
     padding-bottom: 46px;
     padding-left: 100px;
     padding-right: 100px;
+
+    padding: 10vh 5vw;
 }
 
-.process-1, .process-3 {
+.process-1, .process-3, .process-2 {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 60px;
+    left: 50px;
     margin-bottom: 100px;
     width: 100%;
 }
 
-.process-2{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 20px;
-    margin-bottom: 100px;
-    width: 100%;
-}
+
 
 .process-1 #process-img, .process-2 #process-img, .process-3 #process-img {
     width: 564px;
@@ -153,9 +160,9 @@ body {
 
 .process-description {
     position: relative;
-    left: -41px;
+    transform: translate(-40px);
     background-color: #E5E7EB;
-    width: 400px;
+    min-width: 400px;
     height: 300px;
     padding-top: 20px;
     padding-left: 20px;
@@ -163,7 +170,36 @@ body {
     border-radius: 7px;
 }
 
-.process-description h1, .process2-description h1 {
+.process-2 .process-description p {
+    position:relative;
+    left:51px;
+}
+
+.process-2 .process-description h1 {
+    position:relative;
+    left:41px;
+}
+
+.process-2 {
+  flex-direction: row-reverse;
+  
+  left:-50px;
+}
+
+.process-2 .process-description {
+        transform: translate(40px, 0px);
+        padding-right: 20px;
+        text-align: right;
+}
+
+.process-2 #process-icon {
+    z-index: 100;
+    position: relative;
+    transform: translate(78px, -160px);
+}
+
+
+.process-description h1 {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -171,7 +207,7 @@ body {
     width: 350px;
     margin-bottom: 20px;
 }
-.process-description p, .process2-description p {
+.process-description p {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 20px;
     width: 340px;
@@ -181,40 +217,9 @@ body {
     width: 320px;
 }
 
-.process2-description {
-    position: relative;
-    left: 41px;
-    background-color: #E5E7EB;
-    width: 400px;
-    height: 300px;
-    padding-top: 20px;
-    padding-left: 20px;
-    margin-top: 30px;
-    border-radius: 7px;
-}
-
-.process2-description p {
-    position: relative;
-    left: 41px;
-    text-align: right;
-}
-
-.process2-description h1 {
-    position: relative;
-    left: 31px;
-    text-align: right;
-}
 
 
-.process-1 #process-icon, .process-3 #process-icon {
+#process-icon {
     position: relative;
-    top: -160px;
-    left: -78px;
-}
-
-.process-2 #process-icon {
-    position: relative;
-    top: -160px;
-    left: -976px;
-    order: 3;
+    transform: translate(-78px, -160px);
 }
