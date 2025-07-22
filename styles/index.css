@@ -13,7 +13,7 @@ body {
 }
 
 .hero-section {
-    background-color: ffffff;
+    background-color: #ffffff;
     margin-bottom: 154px;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .product-tease {
-    background-color: #ffffff;
+    background-color: #E5E7EB;
     padding-bottom: 89px;
     padding-top: 94px;
     padding-left: 80px;
@@ -68,7 +68,7 @@ body {
 .product-card-container {
     margin-top: 105px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     gap: 100px;
 }

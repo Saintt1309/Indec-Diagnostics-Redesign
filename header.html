@@ -1,121 +1,118 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-</head>
-<style>
-    .header-container {
-        margin-top: 30px;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <style>
     .navbar {
+      padding: 16px 0;
+
+    }
+
+    .navbar-nav{
         background-color: #201f1f;
         color: #ffffff;
         padding: 24px 0px;
-        width: 710px;
+        width: 600px;
         margin: auto;
         margin-top: 0;
         border-radius: 7px;
+        justify-content: space-evenly;
     }
-    .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
+    .navbar-brand img {
+      height: 50px;
     }
-    .navbar li {
-        margin: 0 30px;
+    .nav-link {
+      color: #ffffff !important;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 16px;
+      transition: 150ms ease-in-out;
+      padding: 0;
     }
-    .navbar a, .navbar li {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 16px;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-weight: 300;
-        transition: 150ms ease-in-out;
-    }
-    .navbar a:hover {
-        text-shadow:0px 0px 1px white;
-    }
-    .Logo {
-        margin-left: 91px;
-        height: 65px;
-    }
-
-    .logo img:hover{
-        cursor: pointer;
+    .nav-link:hover {
+      text-shadow: 0px 0px 1px white;
     }
     .connect-button {
-        background-color: #ef4444;
-        border-radius: 7px;
-        margin-right: 91px;
-        display: flex;
-        align-items: center;
-        padding: 0 12px;
-        border: #ef4444 solid 2px;
-        transition: 300ms ease-in-out;
+      background-color: #ef4444;
+      border-radius: 7px;
+      border: 2px solid #ef4444;
+      height: 72px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      transition: 300ms ease-in-out;
+      text-decoration: none;
     }
-    .connect-button a {
-        text-align: center;
-        font-size: 20px;
-        color: #ffffff;
-        font-family: 'Manrope', sans-serif;
-        margin-top: 18px;
-        margin-bottom: 18px;
-        margin-right: 17px;
-        transition: 300ms ease-in-out;
-        text-decoration: none;
+    .connect-button span {
+      font-family: 'Manrope', sans-serif;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 10px;
+      transition: 300ms ease-in-out;
     }
-    .connect-button img{
-        transition: 300ms ease-in-out;
+    .connect-button img {
+      transition: 300ms ease-in-out;
     }
-    .connect-button:hover{
-        background-color: #ffffff;
-        color: #ef4444;
-        cursor: pointer;
+    .connect-button:hover {
+      background-color: #ffffff;
     }
-    .connect-button:hover > a{
-        color: #ef4444;
+    .connect-button:hover span {
+      color: #ef4444;
     }
-    .connect-button:hover > img{
-        content: url(icons/arrow-top-right-red.svg);
-        transition: 300ms ease-in-out;
-        transform: rotate(45deg);
+    .connect-button:hover img {
+      content: url(icons/arrow-top-right-red.svg);
+      transform: rotate(45deg);
     }
-</style>
+  </style>
+</head>
 
 <body>
-    <div class="header-container">
-        <div class="Logo">
-            <img src="images/Logo.png" alt="Company Logo" />
-        </div>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutus.php">About Us</a></li>
-                <li><a href="products.php">Products</a></li>
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="contactus.php">Contact Us</a></li>
-                <li>EN</li>
-            </ul>
-        </div>
-        <div class="connect-button">
-            <a href="contactus.php">Let's Connect</a>
-            <img src="icons/arrow-top-right.svg" alt="Arrow Icon" />
-        </div>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="index.php">
+        <img src="images/Logo.png" alt="Company Logo">
+      </a>
+
+      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.php">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.php">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.php">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.php">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link">EN</span>
+          </li>
+        </ul>
+      </div>
+
+      <a href="contactus.php" class="connect-button ms-auto d-none d-lg-flex">
+        <span>Let's Connect</span>
+        <img src="icons/arrow-top-right.svg" alt="Arrow Icon" />
+      </a>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
