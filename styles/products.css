@@ -1,0 +1,119 @@
+body {
+    margin:0;
+}
+
+.hero-section img{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.hero-section h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ef4444;
+    margin-left: 80px;
+    margin-bottom: 24px;
+    width: 50%;
+    max-width: 710px;
+}
+
+.hero-section p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 80px;
+    margin-bottom: 24px;
+    width: 70%;
+    max-width: 1000px;
+    margin-bottom: 80px;
+}
+
+.products-section {
+    padding: 80px;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+.products-wrapper-1, .products-wrapper-2 {
+    margin-left :100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+    max-width: 820px;
+}
+
+.products-wrapper-2 {
+    display:none;
+}
+
+.product-card {
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.product-card h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ef4444;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.product-card img {
+    width: 350px;
+    height: 350px;
+    margin:25px
+}
+
+.product-category > p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.product-category hr {
+    border-top: 2px solid#ef4444;
+    opacity: 100%;
+    margin-bottom: 40px;
+}
+
+.category-button {
+    border: #000000 2px solid;
+    background-color: #ffffff;
+    height: 50px;
+    margin-bottom: 20px;
+    width: 225px;
+    border-radius: 7px;
+    display: flex;
+    color: #000000;
+    transition: 150ms ease-in-out;
+}
+
+#category-1 {
+       border: #ef4444 2px solid;
+       color: #ffffff;
+       background-color: #ef4444;
+}
+
+.category-button p {
+    text-align: center;
+    margin: auto;
+}
+
+.category-button:hover {
+    cursor: pointer;
+}
