@@ -117,3 +117,220 @@ body {
 .category-button:hover {
     cursor: pointer;
 }
+
+.navbar {
+      padding: 2% 1%;
+    }
+
+    .navbar-nav{
+        background-color: #201f1f;
+        color: #ffffff;
+        padding: 16px 0px;
+        padding-left: 00px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 0;
+        border-radius: 7px;
+        justify-content: space-evenly;
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .nav-link {
+      color: #ffffff !important;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 16px;
+      transition: 150ms ease-in-out;
+      padding : 0;
+      margin-left: 15px;
+    }
+    .nav-link:hover {
+      text-shadow: 0px 0px 1px white;
+    }
+    .connect-button {
+      background-color: #ef4444;
+      border-radius: 7px;
+      border: 2px solid #ef4444;
+      height: 72px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      transition: 300ms ease-in-out;
+      text-decoration: none;
+    }
+    .connect-button span {
+      font-family: 'Manrope', sans-serif;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 10px;
+      transition: 300ms ease-in-out;
+    }
+    .connect-button img {
+      transition: 300ms ease-in-out;
+    }
+    .connect-button:hover {
+      background-color: #ffffff;
+    }
+    .connect-button:hover span {
+      color: #ef4444;
+    }
+    .connect-button:hover img {
+      content: url(/icons/arrow-top-right-red.svg);
+      transform: rotate(45deg);
+    }
+
+    footer {
+        background-color: #201f1f;
+        padding-bottom: 5px;
+    }
+
+    .contact-us{
+        padding-top: 27px;
+        padding-bottom: 81px;
+    }
+
+    .contact-us h1{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .contact-us p{
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .connect-button-f {
+        margin:auto;
+        background-color: #ef4444;
+        border-radius: 7px;
+        width: 302px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        transition: 150ms ease-in-out;
+        border: 2px solid #ef4444;
+    }
+    .connect-button-f a {
+        text-decoration: none;
+        color: #ffffff;
+        transition: 150ms ease-in-out;
+    }
+
+    .connect-button-f:hover {
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+
+    .connect-button-f:hover > a {
+        color: #ef4444;
+    }
+
+    .footer-content {
+        display: flex;
+        gap: 100px;
+    }
+
+    .footer-content h1{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 32px;
+        color: #ef4444;
+    }
+
+    .contact-info{
+        margin: 0;
+    }
+
+    .contact-info p{
+        margin: 0;
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+        width: 300px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        
+    }
+
+    .phone-number, .email, .careers {
+        display: flex;
+    }
+
+    .phone-number img, .email img, .careers img {
+        margin-right: 10px;
+    }
+
+    .site-navigation ul{
+        list-style: none;
+        padding: 0;
+    }
+    .site-navigation ul li{
+        margin-bottom: 10px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .site-navigation ul li a {
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .copyright {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer-container #logo{
+        width: 183px;
+        height: 68px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1200px){
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .footer-content h1 {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            width: auto;
+        }
+    }
