@@ -141,13 +141,29 @@
 
     .footer-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        padding-left: 150px;
-        padding-right: 50px;
     }
 
-
+    @media screen and (max-width: 1200px){
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .footer-content h1 {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            width: auto;
+        }
+    }
 
 </style>
 
